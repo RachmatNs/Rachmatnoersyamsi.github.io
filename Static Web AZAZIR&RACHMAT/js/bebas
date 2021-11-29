@@ -1,0 +1,31 @@
+const portpolioLightbox = GLightbox({
+	selector: '.portpolio-lightbox'
+});
+
+new Swiper('.testimonials-slidebar',{
+	speed: 600,
+	loop: true,
+	autoplay: {
+	delay: 5000,
+	disableOnInteraction: false
+	},
+	slidesPerView: 'auto',
+	pagination: {
+	el: '.swiper-pagination',
+	clickable: true
+	}
+});
+
+new Swiper('.portpolio-details-slider',{
+	speed: 400,
+	loop: true,
+	autoplay:{
+	delay: 5000,
+	disableOnInteraction: false
+	},
+	pagination: {
+	el: '.swiper-pagination',
+	type: 'bullets'
+	clickable: true
+	}
+}),
